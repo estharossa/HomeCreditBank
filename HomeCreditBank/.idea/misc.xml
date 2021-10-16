@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/bank_card_background.xml" value="0.38" />
+        <entry key="app/src/main/res/drawable/bottom_sheet_background.xml" value="0.38" />
+        <entry key="app/src/main/res/drawable/bottom_sheet_backogrund.xml" value="0.38" />
+        <entry key="app/src/main/res/drawable/button_primary_background.xml" value="0.38" />
+        <entry key="app/src/main/res/drawable/button_secondary_background.xml" value="0.38" />
+        <entry key="app/src/main/res/drawable/ic_bank_card.xml" value="0.38" />
+        <entry key="app/src/main/res/drawable/ic_bank_card_bacground.xml" value="0.38" />
+        <entry key="app/src/main/res/drawable/ic_barcode.xml" value="0.38" />
+        <entry key="app/src/main/res/drawable/ic_preloader_background.xml" value="0.38" />
+        <entry key="app/src/main/res/drawable/ic_preloader_logo.xml" value="0.38" />
+        <entry key="app/src/main/res/drawable/ic_qr.xml" value="0.38" />
+        <entry key="app/src/main/res/drawable/ic_shop.xml" value="0.38" />
+        <entry key="app/src/main/res/drawable/ic_shop_home_credit.xml" value="0.38" />
+        <entry key="app/src/main/res/drawable/search_background.xml" value="0.38" />
+        <entry key="app/src/main/res/font/montserrat.xml" value="0.39384615384615385" />
+        <entry key="app/src/main/res/layout/activity_bank.xml" value="0.3697916666666667" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragment_bank.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragment_bank_main.xml" value="0.3697916666666667" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

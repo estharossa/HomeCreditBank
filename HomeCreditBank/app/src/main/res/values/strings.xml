@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">HomeCreditBank</string>
+    <string name="search_hint">Поиск</string>
+    <string name="current_balance">Текущий баланс</string>
+    <string name="example_balance">500 000 ₸</string>
+    <string name="example_card_number">5282 3456 7890 1289</string>
+    <string name="example_card_expiration">09/25</string>
+    <string name="shop">Магазин</string>
+    <string name="scan">Отсканировать</string>
+    <string name="help">Помощь</string>
+    <string name="history">История покупок</string>
+    <string name="active_orders">Активные заявки</string>
+    <string name="settings">Настройки</string>
+    <string name="sign_in">Войти</string>
+    <string name="scan_barcode">Отсканировать штрих-код</string>
+</resources>
