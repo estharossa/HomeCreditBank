@@ -141,6 +141,11 @@ class MainFragment : Fragment() {
                 accountButton.setOnClickListener {
                     startAuthorization()
                 }
+
+                loginButton.setOnClickListener {
+                    val intent = Intent(requireContext(), AuthActivity::class.java)
+                    startActivityForResult(intent, RC_LOGIN)
+                }
             }
         }
     }
