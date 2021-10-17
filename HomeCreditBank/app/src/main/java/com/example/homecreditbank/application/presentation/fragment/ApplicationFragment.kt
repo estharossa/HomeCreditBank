@@ -12,6 +12,7 @@ import com.example.homecreditbank.application.viewmodel.ApplicationViewModel
 import com.example.homecreditbank.databinding.FragmentApplicationBinding
 import com.example.homecreditbank.databinding.LayoutProductFeatureBinding
 import org.koin.androidx.viewmodel.ext.android.viewModel
+import kotlin.random.Random
 
 
 class ApplicationFragment : Fragment() {
@@ -99,13 +100,18 @@ class ApplicationFragment : Fragment() {
             apply.setOnClickListener {
                 ApplicationLoaderFullScreenDialogFragment.newInstance().apply {
                     onLoadingFinished = {
-                        ApplicationStatusFullScreenDialogFragment.newInstance(status = true).apply {
-                            onReceiptClicked = {
-                                val direction =
-                                    ApplicationFragmentDirections.actionApplicationFragmentToReceiptFragment()
-                                findNavController().navigate(direction)
-                            }
-                        }.also {
+
+                        // todo: val imitation logic
+                        val randomBoolean = Random.nextBoolean()
+
+                        ApplicationStatusFullScreenDialogFragment.newInstance(status = randomBoolean)
+                            .apply {
+                                onReceiptClicked = {
+                                    val direction =
+                                        ApplicationFragmentDirections.actionApplicationFragmentToReceiptFragment()
+                                    findNavController().navigate(direction)
+                                }
+                            }.also {
                             it.show(parentFragmentManager, it.tag)
                         }
                     }

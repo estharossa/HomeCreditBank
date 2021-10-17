@@ -12,6 +12,7 @@
     <string name="active_orders">Активные заявки</string>
     <string name="settings">Настройки</string>
     <string name="sign_in">Войти</string>
+    <string name="sign_out">Выйти</string>
     <string name="register">Регистрация</string>
     <string name="scan_barcode">Отсканировать штрих-код</string>
     <string name="banner_description">Заходи в магазин и бери все что хочешь в рассрочку с Home Credit Bank</string>
@@ -33,7 +34,7 @@
     <string name="application_success_title">Вам одобрили кредит</string>
     <string name="application_success_description">Заберите товар в пункте выдачи</string>
     <string name="application_success_action_button">Показать чек</string>
-    <string name="application_failure_title">Вам одобрили кредит</string>
+    <string name="application_failure_title">К сожалению, вам отказано!</string>
     <string name="application_failure_action_button">Главное меню</string>
     <string name="main_page">главное меню</string>
     <string name="account">Аккаунт</string>

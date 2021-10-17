@@ -11,6 +11,7 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.homecreditbank.R
+import com.example.homecreditbank.account.presentation.AccountFragmentDirections
 import com.example.homecreditbank.auth.presentation.AuthActivity
 import com.example.homecreditbank.databinding.FragmentBankMainBinding
 import com.example.homecreditbank.shop.viewmodel.MainScreenAction
@@ -78,10 +79,10 @@ class MainFragment : Fragment() {
 
         if (result != null) {
             if (result.contents == null) {
-                Toast.makeText(requireContext(), "Cancelled", Toast.LENGTH_LONG).show()
+//                Toast.makeText(requireContext(), "Cancelled", Toast.LENGTH_LONG).show()
             } else {
-                Toast.makeText(requireContext(), "Scanned: " + result.contents, Toast.LENGTH_LONG)
-                    .show()
+//                Toast.makeText(requireContext(), "Scanned: " + result.contents, Toast.LENGTH_LONG)
+//                    .show()
             }
         } else {
             super.onActivityResult(requestCode, resultCode, data)
@@ -89,6 +90,17 @@ class MainFragment : Fragment() {
     }
 
     private fun setupViews() {
+        with(binding) {
+
+        }
+    }
+
+    private fun handleAuthorizedState() {
+        binding.userCardLayout.visibility = View.VISIBLE
+        binding.bannerLayout.visibility = View.GONE
+        binding.searchEditText.visibility = View.VISIBLE
+        binding.loginButton.visibility = View.GONE
+
         with(binding) {
             scan.setOnClickListener {
                 val scanner = IntentIntegrator.forSupportFragment(this@MainFragment)
@@ -107,14 +119,12 @@ class MainFragment : Fragment() {
                 val intent = Intent(requireContext(), AuthActivity::class.java)
                 startActivityForResult(intent, RC_LOGIN)
             }
-        }
-    }
 
-    private fun handleAuthorizedState() {
-        binding.userCardLayout.visibility = View.VISIBLE
-        binding.bannerLayout.visibility = View.GONE
-        binding.searchEditText.visibility = View.VISIBLE
-        binding.loginButton.visibility = View.GONE
+            accountButton.setOnClickListener {
+                val direction = MainFragmentDirections.actionMainFragmentToAccountFragment()
+                findNavController().navigate(direction)
+            }
+        }
     }
 
     private fun configureViews(isAuthorized: Boolean) {
@@ -125,6 +135,25 @@ class MainFragment : Fragment() {
             binding.bannerLayout.visibility = View.VISIBLE
             binding.searchEditText.visibility = View.GONE
             binding.loginButton.visibility = View.VISIBLE
+
+            with(binding) {
+                scan.setOnClickListener {
+                    startAuthorization()
+                }
+
+                shop.setOnClickListener {
+                    startAuthorization()
+                }
+
+                accountButton.setOnClickListener {
+                    startAuthorization()
+                }
+            }
         }
+    }
+
+    private fun startAuthorization() {
+        val intent = Intent(requireContext(), AuthActivity::class.java)
+        startActivityForResult(intent, RC_LOGIN)
     }
 }

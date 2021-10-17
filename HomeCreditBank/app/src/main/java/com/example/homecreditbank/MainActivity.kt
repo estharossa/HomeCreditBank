@@ -11,6 +11,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         Handler().postDelayed({
+            finish()
             BankActivity.start(this)
             overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
         }, 2000)

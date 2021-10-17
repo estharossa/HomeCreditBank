@@ -41,6 +41,7 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="app/src/main/res/layout/dialog_fragment_application_loader.xml" value="0.3697916666666667" />
         <entry key="app/src/main/res/layout/dialog_fragment_application_status.xml" value="0.3697916666666667" />
+        <entry key="app/src/main/res/layout/fragment_account.xml" value="0.3697916666666667" />
         <entry key="app/src/main/res/layout/fragment_application.xml" value="0.3697916666666667" />
         <entry key="app/src/main/res/layout/fragment_bank.xml" value="0.33" />
         <entry key="app/src/main/res/layout/fragment_bank_main.xml" value="0.33" />

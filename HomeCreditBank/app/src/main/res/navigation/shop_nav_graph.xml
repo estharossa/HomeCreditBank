@@ -12,6 +12,10 @@
         <action
             android:id="@+id/action_mainFragment_to_applicationFragment"
             app:destination="@id/application_fragment" />
+
+        <action
+            android:id="@+id/action_mainFragment_to_accountFragment"
+            app:destination="@+id/accountFragment" />
     </fragment>
 
     <fragment
@@ -29,6 +33,17 @@
         android:label="ReceiptFragment">
         <action
             android:id="@+id/action_receiptFragment_to_mainFragment"
+            app:destination="@id/main_fragment"
+            app:popUpTo="@id/main_fragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/accountFragment"
+        android:name="com.example.homecreditbank.account.presentation.AccountFragment"
+        android:label="AccountFragment">
+        <action
+            android:id="@+id/action_accountFragment_to_mainFragment"
             app:destination="@id/main_fragment"
             app:popUpTo="@id/main_fragment"
             app:popUpToInclusive="false" />

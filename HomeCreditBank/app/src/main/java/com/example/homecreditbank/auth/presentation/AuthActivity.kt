@@ -7,6 +7,7 @@ import com.example.homecreditbank.auth.viewmodel.AuthAction
 import com.example.homecreditbank.auth.viewmodel.AuthState
 import com.example.homecreditbank.auth.viewmodel.AuthViewModel
 import com.example.homecreditbank.databinding.ActivityLoginBinding
+import com.example.homecreditbank.shop.presentation.activity.BankActivity
 import com.redmadrobot.inputmask.MaskedTextChangedListener
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
@@ -27,6 +28,13 @@ class AuthActivity : AppCompatActivity() {
 
         setupViews()
         configureObservers()
+    }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
+        BankActivity.start(this).also {
+            finish()
+        }
     }
 
     private fun setupViews() {
