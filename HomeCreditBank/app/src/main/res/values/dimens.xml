@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="segment_height">44dp</dimen>
+    <dimen name="segmented_control_height">32dp</dimen>
+    <dimen name="normal_margin">8dp</dimen>
+    <dimen name="moderate_margin">13dp</dimen>
+    <dimen name="small_margin">4dp</dimen>
+    <dimen name="default_segment_text_size">13sp</dimen>
+
+    <dimen name="corner_radius">8dp</dimen>
+    <dimen name="glow_size">10dp</dimen>
+</resources>

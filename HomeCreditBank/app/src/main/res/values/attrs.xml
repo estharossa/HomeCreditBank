@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SegmentedControlWidget">
+        <attr name="segmentsCount" format="integer" />
+        <attr name="tintColor" format="color" />
+        <attr name="selectedSegmentTextColor" format="color" />
+        <attr name="deselectedSegmentTextColor" format="color" />
+        <attr name="segmentTextSize" format="float" />
+        <attr name="isSegmentTextBold" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CardSegmentedControlWidget">
+        <attr name="backgroundDrawable" format="reference" />
+        <attr name="segmentHeight" format="dimension" />
+        <attr name="tint" format="color" />
+        <attr name="selectedTextColor" format="color" />
+        <attr name="deselectedTextColor" format="color" />
+        <attr name="textSize" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="GlowButton">
+        <attr name="buttonColor" format="color" />
+        <attr name="glowColor" format="color" />
+        <attr name="unpressedGlowSize" format="dimension" />
+        <attr name="pressedGlowSize" format="dimension" />
+        <attr name="cornerRadius" format="dimension" />
+    </declare-styleable>
+
+</resources>

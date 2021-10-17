@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'androidx.navigation.safeargs.kotlin'
 }
 
 android {
@@ -87,5 +88,8 @@ dependencies {
     implementation("org.koin:koin-androidx-ext:2.0.1")
 
     // ZXing Android
-    implementation('com.journeyapps:zxing-android-embedded:4.2.0')
+    implementation("com.journeyapps:zxing-android-embedded:4.2.0")
+
+    // InputMask
+    implementation("com.redmadrobot:inputmask:2.3.0")
 }

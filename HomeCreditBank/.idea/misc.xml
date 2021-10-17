@@ -3,25 +3,52 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable-v24/bottom_sheet_line.xml" value="0.38" />
+        <entry key="app/src/main/res/drawable-v24/divider.xml" value="0.38" />
+        <entry key="app/src/main/res/drawable-v24/ripple_bg.xml" value="0.39282051282051283" />
+        <entry key="app/src/main/res/drawable-v24/rounded_bg.xml" value="0.39282051282051283" />
         <entry key="app/src/main/res/drawable/bank_card_background.xml" value="0.38" />
         <entry key="app/src/main/res/drawable/bottom_sheet_background.xml" value="0.38" />
         <entry key="app/src/main/res/drawable/bottom_sheet_backogrund.xml" value="0.38" />
         <entry key="app/src/main/res/drawable/button_primary_background.xml" value="0.38" />
         <entry key="app/src/main/res/drawable/button_secondary_background.xml" value="0.38" />
+        <entry key="app/src/main/res/drawable/buy_button_background.xml" value="0.38" />
+        <entry key="app/src/main/res/drawable/digital_receipt_background.xml" value="0.3859375" />
+        <entry key="app/src/main/res/drawable/edit_text_primary_background.xml" value="0.38" />
         <entry key="app/src/main/res/drawable/ic_bank_card.xml" value="0.38" />
         <entry key="app/src/main/res/drawable/ic_bank_card_bacground.xml" value="0.38" />
+        <entry key="app/src/main/res/drawable/ic_banner.xml" value="0.38" />
         <entry key="app/src/main/res/drawable/ic_barcode.xml" value="0.38" />
+        <entry key="app/src/main/res/drawable/ic_iphone_x.xml" value="0.38" />
+        <entry key="app/src/main/res/drawable/ic_iphone_x_vector.xml" value="0.38" />
         <entry key="app/src/main/res/drawable/ic_preloader_background.xml" value="0.38" />
         <entry key="app/src/main/res/drawable/ic_preloader_logo.xml" value="0.38" />
+        <entry key="app/src/main/res/drawable/ic_print.xml" value="0.3859375" />
         <entry key="app/src/main/res/drawable/ic_qr.xml" value="0.38" />
+        <entry key="app/src/main/res/drawable/ic_share.xml" value="0.3859375" />
         <entry key="app/src/main/res/drawable/ic_shop.xml" value="0.38" />
         <entry key="app/src/main/res/drawable/ic_shop_home_credit.xml" value="0.38" />
+        <entry key="app/src/main/res/drawable/ic_tick.xml" value="0.38" />
+        <entry key="app/src/main/res/drawable/loader_background.xml" value="0.38" />
+        <entry key="app/src/main/res/drawable/loan_selector_background.xml" value="0.38" />
+        <entry key="app/src/main/res/drawable/register_button_background.xml" value="0.39282051282051283" />
         <entry key="app/src/main/res/drawable/search_background.xml" value="0.38" />
+        <entry key="app/src/main/res/drawable/simple_card_background.xml" value="0.38" />
         <entry key="app/src/main/res/font/montserrat.xml" value="0.39384615384615385" />
+        <entry key="app/src/main/res/font/roboto_medium.xml" value="0.39384615384615385" />
         <entry key="app/src/main/res/layout/activity_bank.xml" value="0.3697916666666667" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/dialog_fragment_application_loader.xml" value="0.3697916666666667" />
+        <entry key="app/src/main/res/layout/dialog_fragment_application_status.xml" value="0.3697916666666667" />
+        <entry key="app/src/main/res/layout/fragment_application.xml" value="0.3697916666666667" />
         <entry key="app/src/main/res/layout/fragment_bank.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/fragment_bank_main.xml" value="0.3697916666666667" />
+        <entry key="app/src/main/res/layout/fragment_bank_main.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragment_digital_receipt.xml" value="0.3697916666666667" />
+        <entry key="app/src/main/res/layout/layout_product_feature.xml" value="0.3697916666666667" />
+        <entry key="app/src/main/res/layout/ok_card_segmented_control_widget.xml" value="0.3697916666666667" />
+        <entry key="app/src/main/res/layout/ok_scw_widget_segmented_control.xml" value="0.3697916666666667" />
+        <entry key="app/src/main/res/layout/view_segment.xml" value="0.3697916666666667" />
       </map>
     </option>
   </component>

@@ -7,8 +7,7 @@ import com.example.homecreditbank.shop.domain.usecase.GetAuthorizationState
 import com.example.homecreditbank.shop.domain.usecase.SetAuthorizationState
 
 class MainViewModel(
-    private val getAuthorizationState: GetAuthorizationState,
-    private val setAuthorizationState: SetAuthorizationState
+    private val getAuthorizationState: GetAuthorizationState
 ) : ViewModel() {
 
     private val _state = MutableLiveData<MainScreenState>()
@@ -25,7 +24,6 @@ class MainViewModel(
     private fun initScreen() {
         _state.value = MainScreenState.SubmitScreen(getAuthorizationState.invoke())
     }
-
 }
 
 sealed class MainScreenState {

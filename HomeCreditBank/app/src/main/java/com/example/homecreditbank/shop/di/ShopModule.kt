@@ -39,10 +39,9 @@ private val authDomainModule = module {
 private val authPresentationModule = module {
     viewModel {
         MainViewModel(
-            getAuthorizationState = get(),
-            setAuthorizationState = get()
+            getAuthorizationState = get()
         )
     }
 }
 
-val authModules = listOf(authDataModule, authDomainModule, authPresentationModule)
+val mainModules = listOf(authDataModule, authDomainModule, authPresentationModule)

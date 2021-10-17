@@ -5,13 +5,33 @@
     app:startDestination="@id/main_fragment">
 
     <fragment
-        android:id="@+id/bank_fragment"
-        android:name="com.example.homecreditbank.shop.presentation.fragment.BankFragment"
-        android:label="BankFragment" />
-
-    <fragment
         android:id="@+id/main_fragment"
         android:name="com.example.homecreditbank.shop.presentation.fragment.MainFragment"
-        android:label="MainFragment" />
+        android:label="MainFragment">
+
+        <action
+            android:id="@+id/action_mainFragment_to_applicationFragment"
+            app:destination="@id/application_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/application_fragment"
+        android:name="com.example.homecreditbank.application.presentation.fragment.ApplicationFragment"
+        android:label="ApplicationFragment">
+        <action
+            android:id="@+id/action_applicationFragment_to_receiptFragment"
+            app:destination="@id/receiptFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/receiptFragment"
+        android:name="com.example.homecreditbank.application.presentation.fragment.DigitalReceiptFragment"
+        android:label="ReceiptFragment">
+        <action
+            android:id="@+id/action_receiptFragment_to_mainFragment"
+            app:destination="@id/main_fragment"
+            app:popUpTo="@id/main_fragment"
+            app:popUpToInclusive="false" />
+    </fragment>
 
 </navigation>
