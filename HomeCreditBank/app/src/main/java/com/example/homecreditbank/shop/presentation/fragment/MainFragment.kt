@@ -45,7 +45,6 @@ class MainFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        setupViews()
         configureObservers()
 
         mainViewModel.dispatch(MainScreenAction.InitScreen)
@@ -81,17 +80,11 @@ class MainFragment : Fragment() {
             if (result.contents == null) {
 //                Toast.makeText(requireContext(), "Cancelled", Toast.LENGTH_LONG).show()
             } else {
-//                Toast.makeText(requireContext(), "Scanned: " + result.contents, Toast.LENGTH_LONG)
-//                    .show()
+                Toast.makeText(requireContext(), "Scanned: " + result.contents, Toast.LENGTH_LONG)
+                    .show()
             }
         } else {
             super.onActivityResult(requestCode, resultCode, data)
-        }
-    }
-
-    private fun setupViews() {
-        with(binding) {
-
         }
     }
 
